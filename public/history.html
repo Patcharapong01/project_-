@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติเอกสาร - PL Brand System</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['IBM Plex Sans Thai', 'Sarabun', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+                        display: ['Space Grotesk', 'IBM Plex Sans Thai', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+        }
+        
+        .dark-theme {
+            --bg-body: #090d16;
+            --bg-card: #111827;
+            --border-card: #1f293d;
+            --text-heading: #f8fafc;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            color-scheme: dark;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        /* Subtle Grid Pattern */
+        .bg-grid-pattern {
+            background-size: 32px 32px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        }
+        .dark-theme .bg-grid-pattern {
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased bg-grid-pattern selection:bg-blue-500/20">
+
+    <!-- Header Navigation -->
+    <header class="bg-slate-900 border-b border-slate-800 text-white sticky top-0 z-30 shadow-md backdrop-blur-md bg-slate-900/95">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center gap-2.5 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200">
+                        <i data-lucide="boxes" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-base font-bold tracking-tight text-white font-display">PL Brand System</span>
+                            <span class="px-2 py-0.5 text-[10px] font-semibold tracking-wider uppercase rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300">Archive</span>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-none mt-0.5">ระบบประวัติเอกสารและคลังข้อมูล Packing List</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <nav class="flex items-center gap-1.5" aria-label="เมนูหลัก">
+                    <a href="index.html" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-colors flex items-center gap-1.5">
+                        <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="history.html" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold text-white bg-white/10 shadow-sm border border-white/10 flex items-center gap-1.5">
+                        <i data-lucide="archive" class="w-3.5 h-3.5 text-cyan-400"></i>
+                        <span>ประวัติเอกสาร</span>
+                    </a>
+                </nav>
+                
+                <div class="h-5 w-px bg-slate-800 mx-1"></div>
+
+                <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 border border-transparent hover:border-slate-700 transition-all" title="สลับโหมดสี" aria-label="สลับโหมดสี">
+                    <i data-lucide="moon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-1 max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+        
+        <!-- Page Header & Action Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 font-display flex items-center gap-2">
+                    <i data-lucide="folder-archive" class="w-5 h-5 text-blue-600 dark:text-cyan-400"></i>
+                    ประวัติเอกสาร Packing List ทั้งหมด
+                </h2>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">ค้นหา ตรวจสอบย้อนหลัง ดาวน์โหลดไฟล์ PDF และ Export ข้อมูลสู่ระบบภายนอก</p>
+            </div>
+            
+            <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white text-xs font-semibold shadow-sm transition-all">
+                <i data-lucide="plus" class="w-4 h-4"></i>
+                <span>อัปโหลดเอกสารใหม่</span>
+            </a>
+        </div>
+
+        <!-- History Main Card -->
+        <section class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm overflow-hidden">
+            
+            <!-- Filter & Action Bar -->
+            <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3 bg-slate-50/50 dark:bg-slate-800/30">
+                <div class="relative min-w-[280px] flex-1 max-w-md">
+                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
+                    <input id="searchInput" class="w-full rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 pl-9 pr-3 py-2 text-xs text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all font-mono" placeholder="ค้นหาด้วยชื่อไฟล์ หรือ Document ID...">
+                </div>
+                
+                <div class="flex items-center gap-2">
+                    <button id="exportBtn" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
+                        <i data-lucide="download" class="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400"></i>
+                        <span>Export CSV</span>
+                    </button>
+                    <button id="refreshBtn" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
+                        <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                        <span>รีเฟรช</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- List Container -->
+            <div id="historyList" class="divide-y divide-slate-100 dark:divide-slate-800 font-mono">
+                <p class="p-10 text-center text-xs text-slate-400">กำลังโหลดประวัติ...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-200 dark:border-slate-800/80 bg-white/50 dark:bg-slate-900/50 py-3 text-center text-[11px] text-slate-400">
+        <div class="max-w-[1440px] mx-auto px-4 flex items-center justify-between">
+            <p>PL Brand Verification System &copy; Phase 1</p>
+            <p class="font-mono">Offline-First Engine</p>
+        </div>
+    </footer>
+
+    <script src="history.js"></script>
+</body>
+</html>
