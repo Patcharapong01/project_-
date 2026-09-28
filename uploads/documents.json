@@ -1,1180 +1,3551 @@
 [
   {
     "metadata": {
-      "documentId": "PL-20260923-0019",
-      "originalName": "PL_à¸£à¸_INV26-CWZ092 ( 1,145 CTNS) BY SEA_PK.pdf",
-      "uploadTimestamp": "2026-09-23T20:09:35.489Z",
-      "fileSize": "122.86 KB",
+      "documentId": "PL-20260928-0015",
+      "originalName": "Project01 - Ex.Packing List1.pdf",
+      "uploadTimestamp": "2026-09-28T16:14:13.716Z",
+      "fileSize": "94.59 KB",
+      "pageCount": 1,
       "mimeType": "application/pdf",
-      "storedFileName": "1790194175453-738575123-PL_à¸£à¸_INV26-CWZ092 ( 1,145 CTNS) BY SEA_PK.pdf",
+      "storedFileName": "1790612053696-457608406-Project01 - Ex.Packing List1.pdf",
       "processType": "TEXT_BASED",
       "processingStatus": "PROCESSED",
-      "confirmedTimestamp": "2026-09-23T20:09:36.189Z"
+      "confirmedTimestamp": "2026-09-28T16:14:15.410Z"
     },
     "items": [
       {
         "id": 1,
-        "sapPo": "7495",
-        "sapNo": "4220447",
-        "description": "EMPTY OPAL GLASS JAR  #FIRST SHIPMENT#",
-        "totalQty": "12705",
-        "qtyPcs": "105",
-        "qtyCtns": "121",
-        "nw": "1512.50",
-        "gw": "1708.50",
-        "meas": "3.000",
+        "sapPo": "1001",
+        "sapNo": "4000001",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000001-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000001-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000001-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 2,
-        "sapPo": "7495",
-        "sapNo": "4220447",
-        "description": "EMPTY OPAL GLASS JAR  #FIRST SHIPMENT#",
-        "totalQty": "95",
-        "qtyPcs": "95",
-        "qtyCtns": "1",
-        "nw": "11.31",
-        "gw": "12.21",
-        "meas": "0.508",
+        "sapPo": "1001",
+        "sapNo": "4000002",
+        "description": "EMPTY PLASTIC CAP WISH BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WISH BRUSH",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000002-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000002-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000002-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 3,
-        "sapPo": "7495",
-        "sapNo": "4220026",
-        "description": "EMPTY PLASTIC DISC",
-        "totalQty": "6400",
-        "qtyPcs": "6400",
-        "qtyCtns": "1",
-        "nw": "10.50",
-        "gw": "11.52",
-        "meas": "0.508",
+        "sapPo": "1010",
+        "sapNo": "4000003",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000003-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000003-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
       },
       {
         "id": 4,
-        "sapPo": "7495",
-        "sapNo": "4220026",
+        "sapPo": "1010",
+        "sapNo": "4000004",
         "description": "EMPTY PLASTIC DISC",
-        "totalQty": "5600",
-        "qtyPcs": "5600",
-        "qtyCtns": "1",
-        "nw": "9.19",
-        "gw": "10.08",
-        "meas": "0.508",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000004-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000004-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
       },
       {
         "id": 5,
-        "sapPo": "7495",
-        "sapNo": "4220090",
-        "description": "EMPTY PLASTIC CAP",
-        "totalQty": "12600",
-        "qtyPcs": "600",
-        "qtyCtns": "21",
-        "nw": "254.10",
-        "gw": "300.10",
-        "meas": "1.775",
+        "sapPo": "1010",
+        "sapNo": "4000010",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "",
+        "productionModels": []
       },
       {
         "id": 6,
-        "sapPo": "7495",
-        "sapNo": "4220090",
-        "description": "EMPTY PLASTIC CAP",
-        "totalQty": "200",
-        "qtyPcs": "200",
-        "qtyCtns": "1",
-        "nw": "4.03",
-        "gw": "4.37",
-        "meas": "0.085",
+        "sapPo": "1010",
+        "sapNo": "4000010",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "",
+        "productionModels": []
       },
       {
         "id": 7,
-        "sapPo": "7590",
-        "sapNo": "4212851",
-        "description": "EMPTY PLASTIC BOTTLE",
-        "totalQty": "74304",
-        "qtyPcs": "864",
-        "qtyCtns": "86",
-        "nw": "1057.80",
-        "gw": "1118.00",
-        "meas": "3.449",
+        "sapPo": "1111",
+        "sapNo": "4000011",
+        "description": "EMPTY PLASTIC APPLICATOR",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR",
+        "brand": "Brand C",
+        "productionModels": [
+          {
+            "id": "4000011-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000011-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000011-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 8,
-        "sapPo": "7590",
-        "sapNo": "4212851",
-        "description": "EMPTY PLASTIC BOTTLE",
-        "totalQty": "400",
-        "qtyPcs": "400",
-        "qtyCtns": "1",
-        "nw": "5.70",
-        "gw": "6.50",
-        "meas": "0.040",
+        "sapPo": "1000",
+        "sapNo": "4000012",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand D",
+        "productionModels": [
+          {
+            "id": "4000012-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000012-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
       },
       {
         "id": 9,
-        "sapPo": "7590",
-        "sapNo": "4212852",
-        "description": "EMPTY PLASTIC CAP WITH BRUSH",
-        "totalQty": "72960",
-        "qtyPcs": "912",
-        "qtyCtns": "80",
-        "nw": "512.00",
-        "gw": "576.00",
-        "meas": "3.208",
+        "sapPo": "1000",
+        "sapNo": "4000012",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand D",
+        "productionModels": [
+          {
+            "id": "4000012-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000012-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
       },
       {
         "id": 10,
-        "sapPo": "7590",
-        "sapNo": "4212852",
-        "description": "EMPTY PLASTIC CAP WITH BRUSH",
-        "totalQty": "496",
-        "qtyPcs": "496",
-        "qtyCtns": "1",
-        "nw": "3.50",
-        "gw": "4.20",
-        "meas": "0.039",
+        "sapPo": "1000",
+        "sapNo": "4000013",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand D",
+        "productionModels": [
+          {
+            "id": "4000013-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000013-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 11,
-        "sapPo": "7590",
-        "sapNo": "4212853",
-        "description": "EMPTY PLASTIC WIPER",
-        "totalQty": "64000",
-        "qtyPcs": "16000",
-        "qtyCtns": "4",
-        "nw": "35.60",
-        "gw": "38.40",
-        "meas": "0.150",
+        "sapPo": "1000",
+        "sapNo": "4000013",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand D",
+        "productionModels": [
+          {
+            "id": "4000013-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000013-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 12,
-        "sapPo": "7590",
-        "sapNo": "4212853",
-        "description": "EMPTY PLASTIC WIPER",
-        "totalQty": "7900",
-        "qtyPcs": "7900",
-        "qtyCtns": "1",
-        "nw": "4.40",
-        "gw": "5.20",
-        "meas": "0.034",
+        "sapPo": "1000",
+        "sapNo": "4000014",
+        "description": "EMPTY PLASTIC CAP W/BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP W/BRUSH",
+        "brand": "",
+        "productionModels": [
+          {
+            "id": "4000014-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000014-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000014-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 13,
-        "sapPo": "7601",
-        "sapNo": "4212120",
-        "description": "EMPTY BLUSH ON CASE",
-        "totalQty": "44676",
-        "qtyPcs": "336",
-        "qtyCtns": "136",
-        "nw": "1675.52",
-        "gw": "1811.52",
-        "meas": "5.984",
+        "sapPo": "1211",
+        "sapNo": "4000015",
+        "description": "PUFF",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "PUFF",
+        "brand": "Brand E",
+        "productionModels": [
+          {
+            "id": "4000015-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000015-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000015-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 14,
-        "sapPo": "7601",
-        "sapNo": "4212120",
-        "description": "EMPTY BLUSH ON CASE",
-        "totalQty": "204",
-        "qtyPcs": "204",
-        "qtyCtns": "1",
-        "nw": "9.00",
-        "gw": "10.00",
-        "meas": "0.044",
+        "sapPo": "1212",
+        "sapNo": "4000016",
+        "description": "PUFF",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "PUFF",
+        "brand": "Brand F",
+        "productionModels": [
+          {
+            "id": "4000016-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000016-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000016-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 15,
-        "sapPo": "7641",
-        "sapNo": "4212824",
-        "description": "EMPTY PLASTIC TUBE",
-        "totalQty": "51240",
-        "qtyPcs": "",
+        "sapPo": "1212",
+        "sapNo": "4000017",
+        "description": "ICT COMMON",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "ICT COMMON",
+        "brand": "",
+        "productionModels": [
+          {
+            "id": "4000017-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000017-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000017-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 16,
-        "sapPo": "",
-        "sapNo": "4212824",
-        "description": "EMPTY PLASTIC TUBE",
-        "totalQty": "1800",
-        "qtyPcs": "",
+        "sapPo": "1212",
+        "sapNo": "4000017",
+        "description": "ICT COMMON",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "ICT COMMON",
+        "brand": "",
+        "productionModels": [
+          {
+            "id": "4000017-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000017-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000017-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 17,
-        "sapPo": "7641",
-        "sapNo": "4212824",
-        "description": "EMPTY PLASTIC TUBE",
-        "totalQty": "260",
-        "qtyPcs": "260",
-        "qtyCtns": "1",
-        "nw": "5.59",
-        "gw": "7.07",
-        "meas": "0.101",
+        "sapPo": "1212",
+        "sapNo": "4000017",
+        "description": "ICT COMMON",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "ICT COMMON",
+        "brand": "",
+        "productionModels": [
+          {
+            "id": "4000017-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000017-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000017-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 18,
-        "sapPo": "7641",
-        "sapNo": "4212825",
+        "sapPo": "1213",
+        "sapNo": "4000018",
         "description": "EMPTY PLASTIC CAP",
-        "totalQty": "51218",
-        "qtyPcs": "",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand G",
+        "productionModels": [
+          {
+            "id": "4000018-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000018-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000018-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 19,
-        "sapPo": "",
-        "sapNo": "4212825",
-        "description": "EMPTY PLASTIC CAP",
-        "totalQty": "2542",
-        "qtyPcs": "",
+        "sapPo": "1214",
+        "sapNo": "4000019",
+        "description": "EMPTY PLASTIC CAP WISH BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WISH BRUSH",
+        "brand": "Brand H",
+        "productionModels": [
+          {
+            "id": "4000019-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000019-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000019-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 20,
-        "sapPo": "7641",
-        "sapNo": "4212825",
-        "description": "EMPTY PLASTIC CAP",
-        "totalQty": "282",
-        "qtyPcs": "282",
-        "qtyCtns": "1",
-        "nw": "5.49",
-        "gw": "6.40",
-        "meas": "0.054",
+        "sapPo": "1215",
+        "sapNo": "4000020",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "",
+        "productionModels": []
       },
       {
         "id": 21,
-        "sapPo": "7641",
-        "sapNo": "4212826",
-        "description": "EMPTY PLASTIC APPLICATOR",
-        "totalQty": "32958",
-        "qtyPcs": "",
+        "sapPo": "1216",
+        "sapNo": "4000021",
+        "description": "EMPTY PLASTIC DISC",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC",
+        "brand": "Brand I",
+        "productionModels": [
+          {
+            "id": "4000021-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000021-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000021-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 22,
-        "sapPo": "",
-        "sapNo": "4212826",
-        "description": "EMPTY PLASTIC APPLICATOR",
-        "totalQty": "3042",
-        "qtyPcs": "",
+        "sapPo": "1217",
+        "sapNo": "4000022",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand J",
+        "productionModels": [
+          {
+            "id": "4000022-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000022-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000022-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 23,
-        "sapPo": "7641",
-        "sapNo": "4212826",
+        "sapPo": "1218",
+        "sapNo": "4000023",
         "description": "EMPTY PLASTIC APPLICATOR",
-        "totalQty": "18042",
-        "qtyPcs": "18042",
-        "qtyCtns": "1",
-        "nw": "12.10",
-        "gw": "13.01",
-        "meas": "0.053",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR",
+        "brand": "Brand K",
+        "productionModels": [
+          {
+            "id": "4000023-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000023-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000023-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 24,
-        "sapPo": "",
-        "sapNo": "4220408",
-        "description": "EMPYT GLASS BOTTLE, 15ML (PINK)",
-        "totalQty": "11100",
-        "qtyPcs": "312",
-        "qtyCtns": "36",
-        "nw": "504.00",
-        "gw": "524.52",
-        "meas": "0.985",
+        "sapPo": "1219",
+        "sapNo": "4000024",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand L",
+        "productionModels": [
+          {
+            "id": "4000024-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000024-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000024-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 25,
-        "sapPo": "7659",
-        "sapNo": "4220409",
-        "description": "EMPTY PLASTIC DROPPER",
-        "totalQty": "9828",
-        "qtyPcs": "1404",
-        "qtyCtns": "7",
-        "nw": "66.50",
-        "gw": "73.85",
-        "meas": "0.603",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 26,
-        "sapPo": "7659",
-        "sapNo": "4220409",
-        "description": "EMPTY PLASTIC DROPPER",
-        "totalQty": "472",
-        "qtyPcs": "660",
-        "qtyCtns": "1",
-        "nw": "3.00",
-        "gw": "4.00",
-        "meas": "0.086",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 27,
-        "sapPo": "7659",
-        "sapNo": "4220413",
+        "sapPo": "1220",
+        "sapNo": "4000025",
         "description": "EMPTY PLASTIC PLUG",
-        "totalQty": "10200",
-        "qtyPcs": "10200",
-        "qtyCtns": "1",
-        "nw": "3.00",
-        "gw": "4.00",
-        "meas": "0.070",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 28,
-        "sapPo": "7533",
-        "sapNo": "4213031",
-        "description": "EMPTY PLASTIC CAP W/BRUSH",
-        "totalQty": "25200",
-        "qtyPcs": "1260",
-        "qtyCtns": "20",
-        "nw": "262.00",
-        "gw": "278.00",
-        "meas": "1.188",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 29,
-        "sapPo": "7533",
-        "sapNo": "4213031",
-        "description": "EMPTY PLASTIC CAP W/BRUSH",
-        "totalQty": "500",
-        "qtyPcs": "500",
-        "qtyCtns": "1",
-        "nw": "5.20",
-        "gw": "5.90",
-        "meas": "0.059",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 30,
-        "sapPo": "7533",
-        "sapNo": "4213034",
-        "description": "EMPTY PLASTIC CAP W/BRUSH",
-        "totalQty": "37800",
-        "qtyPcs": "1260",
-        "qtyCtns": "30",
-        "nw": "393.00",
-        "gw": "417.00",
-        "meas": "1.782",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 31,
-        "sapPo": "7457",
-        "sapNo": "4212934",
-        "description": "EMPTY PLASTIC BOTTLE  #FIRST SHIPMENT#",
-        "totalQty": "20400",
-        "qtyPcs": "600",
-        "qtyCtns": "34",
-        "nw": "527.00",
-        "gw": "561.00",
-        "meas": "1.262",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 32,
-        "sapPo": "7457",
-        "sapNo": "4212934",
-        "description": "EMPTY PLASTIC BOTTLE  #FIRST SHIPMENT#",
-        "totalQty": "200",
-        "qtyPcs": "200",
-        "qtyCtns": "1",
-        "nw": "5.20",
-        "gw": "6.10",
-        "meas": "0.037",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 33,
-        "sapPo": "7457",
-        "sapNo": "4212935",
-        "description": "EMPTY PLASTIC CAP W/BRUSH    #FIRST SHIPMENT#",
-        "totalQty": "19800",
-        "qtyPcs": "1800",
-        "qtyCtns": "11",
-        "nw": "115.50",
-        "gw": "127.60",
-        "meas": "0.653",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 34,
-        "sapPo": "7457",
-        "sapNo": "4212935",
-        "description": "EMPTY PLASTIC CAP W/BRUSH    #FIRST SHIPMENT#",
-        "totalQty": "800",
-        "qtyPcs": "800",
-        "qtyCtns": "1",
-        "nw": "4.70",
-        "gw": "5.80",
-        "meas": "0.037",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 35,
-        "sapPo": "7457",
-        "sapNo": "4212936",
-        "description": "EMPTY PLASTIC WIPER  #FIRST SHIPMENT#",
-        "totalQty": "16000",
-        "qtyPcs": "16000",
-        "qtyCtns": "1",
-        "nw": "9.40",
-        "gw": "10.00",
-        "meas": "0.037",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 36,
-        "sapPo": "7457",
-        "sapNo": "4212936",
-        "description": "EMPTY PLASTIC WIPER  #FIRST SHIPMENT#",
-        "totalQty": "4600",
-        "qtyPcs": "4600",
-        "qtyCtns": "1",
-        "nw": "2.80",
-        "gw": "3.40",
-        "meas": "0.037",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 37,
-        "sapPo": "",
-        "sapNo": "4212283",
-        "description": "PUFF-SUREEPORN",
-        "totalQty": "7280",
-        "qtyPcs": "7280",
-        "qtyCtns": "1",
-        "nw": "13.70",
-        "gw": "15.70",
-        "meas": "0.121",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 38,
-        "sapPo": "",
-        "sapNo": "4212283",
-        "description": "PUFF-SUREEPORN",
-        "totalQty": "3020",
-        "qtyPcs": "3020",
-        "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 39,
-        "sapPo": "",
-        "sapNo": "4212283",
-        "description": "PUFF-SUREEPORN",
-        "totalQty": "4260",
-        "qtyPcs": "4260",
-        "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 40,
-        "sapPo": "",
-        "sapNo": "4212283",
-        "description": "PUFF-SUREEPORN",
-        "totalQty": "72800",
-        "qtyPcs": "7280",
-        "qtyCtns": "10",
-        "nw": "137.00",
-        "gw": "157.00",
-        "meas": "1.206",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 41,
-        "sapPo": "",
-        "sapNo": "4212283",
-        "description": "PUFF-SUREEPORN",
-        "totalQty": "7681",
-        "qtyPcs": "7681",
-        "qtyCtns": "1",
-        "nw": "13.70",
-        "gw": "15.70",
-        "meas": "0.121",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 42,
-        "sapPo": "7709",
-        "sapNo": "4212482",
-        "description": "PUFF - 4U2",
-        "totalQty": "6500",
-        "qtyPcs": "6500",
-        "qtyCtns": "1",
-        "nw": "11.85",
-        "gw": "13.45",
-        "meas": "0.121",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 43,
-        "sapPo": "7709",
-        "sapNo": "4212482",
-        "description": "PUFF - 4U2",
-        "totalQty": "5900",
-        "qtyPcs": "6000",
-        "qtyCtns": "1",
-        "nw": "11.85",
-        "gw": "13.45",
-        "meas": "0.121",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 44,
-        "sapPo": "7709",
-        "sapNo": "4212481",
-        "description": "POLYETHER FOAM 51*10 MM",
-        "totalQty": "6210",
-        "qtyPcs": "6210",
-        "qtyCtns": "1",
-        "nw": "4.00",
-        "gw": "5.70",
-        "meas": "0.187",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 45,
-        "sapPo": "7709",
-        "sapNo": "4212481",
-        "description": "POLYETHER FOAM 51*10 MM",
-        "totalQty": "6190",
-        "qtyPcs": "6325",
-        "qtyCtns": "1",
-        "nw": "4.00",
-        "gw": "5.70",
-        "meas": "0.187",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 46,
-        "sapPo": "7639",
-        "sapNo": "4220429",
-        "description": "EMPTY SACHET WITH SPOUT MIZUMI (#1)",
-        "totalQty": "120000",
-        "qtyPcs": "5000",
-        "qtyCtns": "24",
-        "nw": "305.20",
-        "gw": "334.00",
-        "meas": "2.058",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 47,
-        "sapPo": "7639",
-        "sapNo": "4220429",
-        "description": "EMPTY SACHET WITH SPOUT MIZUMI (#1)",
-        "totalQty": "5500",
-        "qtyPcs": "5500",
-        "qtyCtns": "1",
-        "nw": "16.30",
-        "gw": "17.50",
-        "meas": "0.086",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 48,
-        "sapPo": "7639",
-        "sapNo": "4220430",
-        "description": "EMPTY SACHET WITH SPOUT MIZUMI (#2)",
-        "totalQty": "35000",
-        "qtyPcs": "5000",
-        "qtyCtns": "7",
-        "nw": "103.60",
-        "gw": "112.00",
-        "meas": "0.600",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 49,
-        "sapPo": "7639",
-        "sapNo": "4220430",
-        "description": "EMPTY SACHET WITH SPOUT MIZUMI (#2)",
-        "totalQty": "2800",
-        "qtyPcs": "2800",
-        "qtyCtns": "1",
-        "nw": "8.40",
-        "gw": "9.60",
-        "meas": "0.086",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 50,
-        "sapPo": "7639",
-        "sapNo": "4220431",
-        "description": "EMPTY SACHET WITH SPOUT MIZUMI (#3)",
-        "totalQty": "110000",
-        "qtyPcs": "5000",
-        "qtyCtns": "22",
-        "nw": "275.60",
-        "gw": "302.00",
-        "meas": "1.887",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 51,
-        "sapPo": "7639",
-        "sapNo": "4220431",
-        "description": "EMPTY SACHET WITH SPOUT MIZUMI (#3)",
-        "totalQty": "4600",
-        "qtyPcs": "4600",
-        "qtyCtns": "1",
-        "nw": "14.00",
-        "gw": "15.20",
-        "meas": "0.086",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 52,
-        "sapPo": "7694",
-        "sapNo": "4220350",
-        "description": "EMPTY SACHET WITH SPOUT MEIJI",
-        "totalQty": "94000",
-        "qtyPcs": "2000",
-        "qtyCtns": "47",
-        "nw": "344.80",
-        "gw": "394.06",
-        "meas": "4.031",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 53,
-        "sapPo": "7694",
-        "sapNo": "4220350",
-        "description": "EMPTY SACHET WITH SPOUT MEIJI",
-        "totalQty": "1200",
-        "qtyPcs": "1200",
-        "qtyCtns": "1",
-        "nw": "5.30",
-        "gw": "6.10",
-        "meas": "0.086",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 54,
-        "sapPo": "7730",
-        "sapNo": "4212333",
-        "description": "EMPTY PLASTIC REFILL CASE",
-        "totalQty": "21600",
-        "qtyPcs": "360",
-        "qtyCtns": "60",
-        "nw": "240.00",
-        "gw": "288.00",
-        "meas": "2.915",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 55,
-        "sapPo": "7730",
-        "sapNo": "4212334",
-        "description": "POLYETHER FOAM",
-        "totalQty": "26496",
-        "qtyPcs": "13248",
-        "qtyCtns": "2",
-        "nw": "13.00",
-        "gw": "16.00",
-        "meas": "0.605",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 56,
-        "sapPo": "7730",
-        "sapNo": "4212334",
-        "description": "POLYETHER FOAM",
-        "totalQty": "5902",
-        "qtyPcs": "6874",
-        "qtyCtns": "1",
-        "nw": "6.50",
-        "gw": "8.00",
-        "meas": "0.303",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 57,
-        "sapPo": "7553",
-        "sapNo": "4213043",
-        "description": "EMPTY PLASTIC SPOUT WITH CAP",
-        "totalQty": "10584",
-        "qtyPcs": "2646",
-        "qtyCtns": "4",
-        "nw": "26.80",
-        "gw": "30.80",
-        "meas": "0.202",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 58,
-        "sapPo": "7708",
-        "sapNo": "4213066",
-        "description": "EMPTY PLASTIC CAP WITH BRUSH   #FIRST SHIPMENT#",
-        "totalQty": "36960",
-        "qtyPcs": "3360",
-        "qtyCtns": "11",
-        "nw": "73.70",
-        "gw": "84.70",
-        "meas": "0.554",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 59,
-        "sapPo": "7708",
-        "sapNo": "4220330",
-        "description": "EMPTY PLASTIC SPOUT WITH CAP",
-        "totalQty": "100000",
-        "qtyPcs": "10000",
-        "qtyCtns": "10",
-        "nw": "132.90",
-        "gw": "147.30",
-        "meas": "0.501",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 60,
-        "sapPo": "7767",
-        "sapNo": "4220330",
-        "description": "EMPTY PLASTIC SPOUT WITH CAP",
-        "totalQty": "3000",
-        "qtyPcs": "3000",
-        "qtyCtns": "1",
-        "nw": "3.90",
-        "gw": "4.30",
-        "meas": "0.050",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 61,
-        "sapPo": "",
-        "sapNo": "4212742",
-        "description": "PLASTIC CAP WITH SPOUT",
-        "totalQty": "48000",
-        "qtyPcs": "8000",
-        "qtyCtns": "6",
-        "nw": "84.54",
-        "gw": "90.24",
-        "meas": "0.300",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 62,
-        "sapPo": "",
-        "sapNo": "4212742",
-        "description": "PLASTIC CAP WITH SPOUT",
-        "totalQty": "2000",
-        "qtyPcs": "2000",
-        "qtyCtns": "1",
-        "nw": "3.50",
-        "gw": "3.80",
-        "meas": "0.050",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 63,
-        "sapPo": "7753",
-        "sapNo": "4211998",
-        "description": "PLASTIC CAP WITH SPOUT",
-        "totalQty": "100000",
-        "qtyPcs": "10000",
-        "qtyCtns": "10",
-        "nw": "94.00",
-        "gw": "99.00",
-        "meas": "0.353",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 64,
-        "sapPo": "7753",
-        "sapNo": "4211998",
-        "description": "PLASTIC CAP WITH SPOUT",
-        "totalQty": "3000",
-        "qtyPcs": "3000",
-        "qtyCtns": "1",
-        "nw": "2.80",
-        "gw": "3.30",
-        "meas": "0.035",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 65,
-        "sapPo": "7723",
-        "sapNo": "42711907",
-        "description": "GIFT BOX-SUREEPORN #00 BRIGHT ME",
-        "totalQty": "34800",
-        "qtyPcs": "1200",
-        "qtyCtns": "29",
-        "nw": "292.90",
-        "gw": "351.19",
-        "meas": "1.91",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 66,
-        "sapPo": "7723",
-        "sapNo": "42711907",
-        "description": "GIFT BOX-SUREEPORN #00 BRIGHT ME",
-        "totalQty": "200",
-        "qtyPcs": "200",
-        "qtyCtns": "1",
-        "nw": "1.68",
-        "gw": "1.80",
-        "meas": "0.07",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 67,
-        "sapPo": "7723",
-        "sapNo": "42711908",
-        "description": "GIFT BOX-SUREEPORN #01 AURA ME",
-        "totalQty": "36000",
-        "qtyPcs": "1200",
-        "qtyCtns": "30",
-        "nw": "303.00",
-        "gw": "362.30",
-        "meas": "1.96",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 68,
-        "sapPo": "7723",
-        "sapNo": "42711908",
-        "description": "GIFT BOX-SUREEPORN #01 AURA ME",
-        "totalQty": "26400",
-        "qtyPcs": "1200",
-        "qtyCtns": "22",
-        "nw": "217.37",
-        "gw": "268.29",
-        "meas": "1.55",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 69,
-        "sapPo": "7723",
-        "sapNo": "42711908",
-        "description": "GIFT BOX-SUREEPORN #01 AURA ME",
-        "totalQty": "600",
-        "qtyPcs": "600",
-        "qtyCtns": "1",
-        "nw": "9.88",
-        "gw": "12.19",
-        "meas": "0.07",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 70,
-        "sapPo": "7723",
-        "sapNo": "42711909",
-        "description": "GIFT BOX-SUREEPORN #02 MONEY ME",
-        "totalQty": "24000",
-        "qtyPcs": "1200",
-        "qtyCtns": "20",
-        "nw": "200.40",
-        "gw": "249.80",
-        "meas": "1.54",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 71,
-        "sapPo": "7723",
-        "sapNo": "42711909",
-        "description": "GIFT BOX-SUREEPORN #02 MONEY ME",
-        "totalQty": "1000",
-        "qtyPcs": "1000",
-        "qtyCtns": "1",
-        "nw": "10.02",
-        "gw": "12.49",
-        "meas": "0.08",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 72,
-        "sapPo": "7726",
-        "sapNo": "42741266",
-        "description": "INNER P6-SUREEPORN #01 AURA ME",
-        "totalQty": "17400",
-        "qtyPcs": "600",
-        "qtyCtns": "29",
-        "nw": "313.49",
-        "gw": "335.24",
-        "meas": "1.84",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 73,
-        "sapPo": "7726",
-        "sapNo": "42741266",
-        "description": "INNER P6-SUREEPORN #01 AURA ME",
         "totalQty": "100",
         "qtyPcs": "100",
-        "qtyCtns": "1",
-        "nw": "3.60",
-        "gw": "3.85",
-        "meas": "0.06",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 74,
-        "sapPo": "7726",
-        "sapNo": "42741268",
-        "description": "INNER P6-SUREEPORN #02 MONEY ME (NEW)",
-        "totalQty": "17400",
-        "qtyPcs": "600",
-        "qtyCtns": "29",
-        "nw": "313.49",
-        "gw": "335.24",
-        "meas": "1.84",
-        "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 75,
-        "sapPo": "7726",
-        "sapNo": "42741268",
-        "description": "INNER P6-SUREEPORN #02 MONEY ME (NEW)",
-        "totalQty": "100",
-        "qtyPcs": "100",
-        "qtyCtns": "1",
-        "nw": "3.60",
-        "gw": "4.07",
-        "meas": "0.07",
-        "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand M",
+        "productionModels": [
+          {
+            "id": "4000025-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000025-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000025-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       }
     ]
   },
   {
     "metadata": {
-      "documentId": "PL-20260923-0020",
-      "originalName": "1790137821905-135242850-PL-Ã Â¸Â£Ã Â¸Â-INV26-CWZ093 (11CTNS) BY AIR.pdf",
-      "uploadTimestamp": "2026-09-23T20:09:44.188Z",
-      "fileSize": "134.49 KB",
+      "documentId": "PL-20260928-0017",
+      "originalName": "Project01 - Ex.Packing List2.pdf",
+      "uploadTimestamp": "2026-09-28T16:14:23.554Z",
+      "fileSize": "94.58 KB",
+      "pageCount": 1,
       "mimeType": "application/pdf",
-      "storedFileName": "1790194182551-289409835-1790137821905-135242850-PL-Ã Â¸Â£Ã Â¸Â-INV26-CWZ093 (11CTNS) BY AIR.pdf",
-      "processType": "OCR",
+      "storedFileName": "1790612063539-260511512-Project01 - Ex.Packing List2.pdf",
+      "processType": "TEXT_BASED",
       "processingStatus": "PROCESSED",
-      "confirmedTimestamp": "2026-09-23T20:09:46.352Z"
+      "confirmedTimestamp": "2026-09-28T16:14:26.004Z"
     },
     "items": [
       {
         "id": 1,
-        "sapPo": "7639",
-        "sapNo": "4220429",
-        "description": "[EMPTY SACHET WITH SPOUT MIZUMI (#1) EEE 112.00 |",
-        "totalQty": "0.600",
-        "qtyPcs": "",
+        "sapPo": "2001",
+        "sapNo": "4000026",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "-",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand N",
+        "productionModels": [
+          {
+            "id": "4000026-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000026-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000026-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 2,
-        "sapPo": "7639",
-        "sapNo": "4220430",
-        "description": "[EMPTY SACHET WITH SPOUT MIZUMI (#2) 20,000 [so | 4 | sao | 64.00 =",
-        "totalQty": "",
-        "qtyPcs": "",
+        "sapPo": "2001",
+        "sapNo": "4000027",
+        "description": "EMPTY PLASTIC CAP WISH BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "-",
-        "status": "INCOMPLETE",
-        "editedByUser": false
-      }
-    ]
-  },
-  {
-    "metadata": {
-      "documentId": "PL-20260923-0021",
-      "originalName": "PL-à¸£à¸-INV26-CWZ100 (95CTNS) BY AIR.pdf",
-      "uploadTimestamp": "2026-09-23T20:09:52.838Z",
-      "fileSize": "126.30 KB",
-      "mimeType": "application/pdf",
-      "storedFileName": "1790194190533-724435812-PL-à¸£à¸-INV26-CWZ100 (95CTNS) BY AIR.pdf",
-      "processType": "OCR",
-      "processingStatus": "PROCESSED",
-      "confirmedTimestamp": "2026-09-23T20:09:54.159Z"
-    },
-    "items": [
-      {
-        "id": 1,
-        "sapPo": "7715",
-        "sapNo": "4213006",
-        "description": "|EMPTY SACHET WITH SPOUT NAMI (#2) 72,500 | 2500 | 29 | 237.80 EX)",
-        "totalQty": "2.487",
-        "qtyPcs": "",
-        "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "-",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
-      },
-      {
-        "id": 2,
-        "sapPo": "7710",
-        "sapNo": "4213046",
-        "description": "(EMPTY SACHET WITH SPOUT FLEEN + first suipment + | 100,000 | 2500 | 40 | 400.00 | 448.00 =",
-        "totalQty": "",
-        "qtyPcs": "",
-        "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "-",
-        "status": "INCOMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WISH BRUSH",
+        "brand": "Brand N",
+        "productionModels": [
+          {
+            "id": "4000027-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000027-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000027-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 3,
-        "sapPo": "7710",
-        "sapNo": "4213046",
-        "description": "[EMPTY SACHET WITH SPOUT FLEEN # fist sHipmen # EIRENE",
-        "totalQty": "0.086",
-        "qtyPcs": "",
+        "sapPo": "1011",
+        "sapNo": "4000028",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
         "qtyCtns": "",
-        "nw": "",
-        "gw": "",
-        "meas": "-",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
         "status": "COMPLETE",
-        "editedByUser": false
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "Brand O",
+        "productionModels": [
+          {
+            "id": "4000028-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000028-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000028-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
       },
       {
         "id": 4,
-        "sapPo": "7727",
-        "sapNo": "4213044",
-        "description": "|PLASTIC CAP WITH SPATULA EEE 40.00 | 5200 [osne",
+        "sapPo": "1011",
+        "sapNo": "4000029",
+        "description": "EMPTY PLASTIC DISC",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC",
+        "brand": "Brand O",
+        "productionModels": [
+          {
+            "id": "4000029-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000029-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000029-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "sapPo": "1011",
+        "sapNo": "4000030",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "",
+        "productionModels": []
+      },
+      {
+        "id": 6,
+        "sapPo": "1111",
+        "sapNo": "4000031",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand P",
+        "productionModels": [
+          {
+            "id": "4000031-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000031-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000031-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "sapPo": "1111",
+        "sapNo": "4000032",
+        "description": "EMPTY PLASTIC APPLICATOR",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR",
+        "brand": "Brand P",
+        "productionModels": [
+          {
+            "id": "4000032-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000032-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000032-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "sapPo": "1000",
+        "sapNo": "4000033",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand Q",
+        "productionModels": [
+          {
+            "id": "4000033-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000033-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000033-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "sapPo": "1000",
+        "sapNo": "4000034",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand Q",
+        "productionModels": [
+          {
+            "id": "4000034-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000034-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000034-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "sapPo": "1000",
+        "sapNo": "4000034",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand Q",
+        "productionModels": [
+          {
+            "id": "4000034-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000034-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000034-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "sapPo": "1001",
+        "sapNo": "4000035",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand R",
+        "productionModels": [
+          {
+            "id": "4000035-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000035-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000035-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "sapPo": "1001",
+        "sapNo": "4000036",
+        "description": "EMPTY PLASTIC CAP W/BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP W/BRUSH",
+        "brand": "Brand R",
+        "productionModels": [
+          {
+            "id": "4000036-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000036-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000036-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "sapPo": "1212",
+        "sapNo": "4000037",
+        "description": "PUFF",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000037-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000037-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000037-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "sapPo": "1212",
+        "sapNo": "4000037",
+        "description": "PUFF",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000037-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000037-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000037-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "sapPo": "1212",
+        "sapNo": "4000038",
+        "description": "ICT COMMON",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "ICT COMMON",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000038-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000038-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000038-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "sapPo": "1212",
+        "sapNo": "4000039",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000039-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000039-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000039-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "sapPo": "1212",
+        "sapNo": "4000039",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000039-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000039-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000039-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "sapPo": "1212",
+        "sapNo": "4000039",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000039-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000039-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000039-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "sapPo": "1215",
+        "sapNo": "4000040",
+        "description": "EMPTY PLASTIC CAP WISH BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WISH BRUSH",
+        "brand": "",
+        "productionModels": []
+      },
+      {
+        "id": 20,
+        "sapPo": "1215",
+        "sapNo": "4000041",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000041-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000041-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000041-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "sapPo": "2216",
+        "sapNo": "4000021",
+        "description": "EMPTY PLASTIC DISC",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC",
+        "brand": "Brand I",
+        "productionModels": [
+          {
+            "id": "4000021-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000021-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000021-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "sapPo": "2217",
+        "sapNo": "4000022",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand J",
+        "productionModels": [
+          {
+            "id": "4000022-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000022-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000022-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "sapPo": "2218",
+        "sapNo": "4000023",
+        "description": "EMPTY PLASTIC APPLICATOR",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR",
+        "brand": "Brand K",
+        "productionModels": [
+          {
+            "id": "4000023-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000023-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000023-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "sapPo": "2219",
+        "sapNo": "4000024",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand L",
+        "productionModels": [
+          {
+            "id": "4000024-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000024-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000024-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "sapPo": "2220",
+        "sapNo": "4000025",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand M",
+        "productionModels": [
+          {
+            "id": "4000025-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000025-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000025-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "documentId": "PL-20260928-0019",
+      "originalName": "Project01 - Ex.Packing List3.pdf",
+      "uploadTimestamp": "2026-09-28T16:14:51.103Z",
+      "fileSize": "93.41 KB",
+      "pageCount": 1,
+      "mimeType": "application/pdf",
+      "storedFileName": "1790612091087-289543820-Project01 - Ex.Packing List3.pdf",
+      "processType": "TEXT_BASED",
+      "processingStatus": "PROCESSED",
+      "confirmedTimestamp": "2026-09-28T16:14:52.056Z"
+    },
+    "items": [
+      {
+        "id": 1,
+        "sapPo": "3001",
+        "sapNo": "4000042",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand U",
+        "productionModels": [
+          {
+            "id": "4000042-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000042-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000042-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "sapPo": "3002",
+        "sapNo": "4000043",
+        "description": "EMPTY PLASTIC CAP WISH BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WISH BRUSH",
+        "brand": "Brand V",
+        "productionModels": [
+          {
+            "id": "4000043-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000043-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000043-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "sapPo": "3011",
+        "sapNo": "4000044",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000044-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000044-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000044-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "sapPo": "3011",
+        "sapNo": "4000044",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000044-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000044-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000044-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "sapPo": "3011",
+        "sapNo": "4000045",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000045-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000045-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000045-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "sapPo": "3111",
+        "sapNo": "4000046",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000046-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000046-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000046-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "sapPo": "3111",
+        "sapNo": "4000046",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000046-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000046-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000046-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "documentId": "PL-20260928-0020",
+      "originalName": "Project01 - Ex.Packing List4.pdf",
+      "uploadTimestamp": "2026-09-28T16:14:55.080Z",
+      "fileSize": "93.95 KB",
+      "pageCount": 1,
+      "mimeType": "application/pdf",
+      "storedFileName": "1790612095065-335748023-Project01 - Ex.Packing List4.pdf",
+      "processType": "TEXT_BASED",
+      "processingStatus": "PROCESSED",
+      "confirmedTimestamp": "2026-09-28T16:14:55.735Z"
+    },
+    "items": [
+      {
+        "id": 1,
+        "sapPo": "4001",
+        "sapNo": "4000047",
+        "description": "EMPTY PLASTIC CAP",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000047-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000047-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000047-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "sapPo": "4001",
+        "sapNo": "4000048",
+        "description": "EMPTY PLASTIC CAP WISH BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WISH BRUSH",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000048-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000048-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000048-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "sapPo": "4001",
+        "sapNo": "4000049",
+        "description": "EMPTY PLASTIC BOTTLE",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000049-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000049-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000049-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "sapPo": "4011",
+        "sapNo": "4000050",
+        "description": "EMPTY PLASTIC DISC",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC",
+        "brand": "",
+        "productionModels": []
+      },
+      {
+        "id": 5,
+        "sapPo": "4011",
+        "sapNo": "4000050",
+        "description": "EMPTY PLASTIC DISC",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC",
+        "brand": "",
+        "productionModels": []
+      },
+      {
+        "id": 6,
+        "sapPo": "4011",
+        "sapNo": "4000051",
+        "description": "EMPTY PLASTIC WIPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER",
+        "brand": "Brand C",
+        "productionModels": [
+          {
+            "id": "4000051-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000051-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000051-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "sapPo": "4011",
+        "sapNo": "4000052",
+        "description": "EMPTY PLASTIC APPLICATOR",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR",
+        "brand": "Brand C",
+        "productionModels": [
+          {
+            "id": "4000052-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000052-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000052-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "sapPo": "4011",
+        "sapNo": "4000053",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand C",
+        "productionModels": [
+          {
+            "id": "4000053-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000053-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000053-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "sapPo": "4000",
+        "sapNo": "4000054",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand E",
+        "productionModels": [
+          {
+            "id": "4000054-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000054-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000054-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "sapPo": "4000",
+        "sapNo": "4000054",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand E",
+        "productionModels": [
+          {
+            "id": "4000054-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000054-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000054-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "sapPo": "4000",
+        "sapNo": "4000054",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand E",
+        "productionModels": [
+          {
+            "id": "4000054-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000054-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000054-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "sapPo": "4000",
+        "sapNo": "4000055",
+        "description": "EMPTY PLASTIC CAP W/BRUSH",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP W/BRUSH",
+        "brand": "Brand E",
+        "productionModels": [
+          {
+            "id": "4000055-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000055-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000055-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "sapPo": "4212",
+        "sapNo": "4000056",
+        "description": "PUFF",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000056-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000056-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000056-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "sapPo": "4212",
+        "sapNo": "4000057",
+        "description": "EMPTY PLASTIC DROPPER",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000057-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000057-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000057-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "sapPo": "4212",
+        "sapNo": "4000058",
+        "description": "EMPTY PLASTIC PLUG",
+        "totalQty": "100",
+        "qtyPcs": "100",
+        "qtyCtns": "",
+        "nw": "10",
+        "gw": "0",
+        "meas": "0",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000058-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000058-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000058-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "documentId": "PL-20260928-0027",
+      "originalName": "Packing List Test Document (200 Items - Sample).pdf",
+      "uploadTimestamp": "2026-09-28T17:10:14.060Z",
+      "fileSize": "126.52 KB",
+      "pageCount": 2,
+      "mimeType": "application/pdf",
+      "storedFileName": "1790615403732-662579572-Packing List Test Document (200 Items - Sample).pdf",
+      "processType": "OCR",
+      "processingStatus": "PROCESSED",
+      "confirmedTimestamp": "2026-09-28T17:10:19.019Z"
+    },
+    "items": [
+      {
+        "id": 1,
+        "sapPo": "1000",
+        "sapNo": "4000035",
+        "description": "EMPTY PLASTIC WIPER              100       100      2   11.03 12.37 0.058    In",
         "totalQty": "",
         "qtyPcs": "",
         "qtyCtns": "",
         "nw": "",
         "gw": "",
         "meas": "-",
-        "status": "INCOMPLETE",
-        "editedByUser": false
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER              100       100      2   11.03 12.37 0.058    In",
+        "bom": "Brand R",
+        "brand": "Brand R",
+        "productionModels": [
+          {
+            "id": "4000035-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000035-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000035-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "sapPo": "1000",
+        "sapNo": "4000015",
+        "description": "EMPTY PLASTIC APPLICATOR         1000      1000     10 18.29 19.04 0.137    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR         1000      1000     10 18.29 19.04 0.137    In",
+        "bom": "Brand R",
+        "brand": "Brand R",
+        "productionModels": [
+          {
+            "id": "4000015-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000015-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000015-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "sapPo": "1000",
+        "sapNo": "9900039",
+        "description": "EMPTY PLASTIC DROPPER           100       100      2    9.60 10.77 0.137 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER           100       100      2    9.60 10.77 0.137 Noti",
+        "bom": "Brand R",
+        "brand": "Brand R",
+        "productionModels": []
+      },
+      {
+        "id": 4,
+        "sapPo": "1011",
+        "sapNo": "4000002",
+        "description": "EMPTY PLASTIC WIPER              500       500      2 13.23 14.43 0.015    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER              500       500      2 13.23 14.43 0.015    In",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000002-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000002-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000002-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "sapPo": "1011",
+        "sapNo": "4000043",
+        "description": "EMPTY PLASTIC PLUG               200       200      1   16.87 18.22 0.144    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG               200       200      1   16.87 18.22 0.144    In",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000043-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000043-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000043-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "sapPo": "1011",
+        "sapNo": "4000052",
+        "description": "PUFF-Brand C                              500          500        2 14.62 16.31 0.094     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF-Brand C                              500          500        2 14.62 16.31 0.094     In",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000052-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000052-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000052-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "sapPo": "1011",
+        "sapNo": "9900034",
+        "description": "UNKNOWN COMPONENT                 500          500        5 13.98 15.75 0.100 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "UNKNOWN COMPONENT                 500          500        5 13.98 15.75 0.100 Noti",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": []
+      },
+      {
+        "id": 8,
+        "sapPo": "1025",
+        "sapNo": "9900043",
+        "description": "EMPTY PLASTIC WIPER              200       200      2 10.08 11.17 0.020 Not i",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER              200       200      2 10.08 11.17 0.020 Not i",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": []
+      },
+      {
+        "id": 9,
+        "sapPo": "1025",
+        "sapNo": "4000046",
+        "description": "EMPTY PLASTIC APPLICATOR         100       100      2 15.69 17.44 0.061    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR         100       100      2 15.69 17.44 0.061    In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000046-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000046-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000046-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "sapPo": "1025",
+        "sapNo": "9900015",
+        "description": "EMPTY PLASTIC DROPPER           1000      1000     5 18.78 20.64 0.099 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER           1000      1000     5 18.78 20.64 0.099 Noti",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": []
+      },
+      {
+        "id": 11,
+        "sapPo": "1038",
+        "sapNo": "4000044",
+        "description": "EMPTY PLASTIC PLUG               200       200      4 24.82 2599 0.115    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG               200       200      4 24.82 2599 0.115    In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000044-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000044-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000044-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "sapPo": "1038",
+        "sapNo": "4000015",
+        "description": "EMPTY PLASTIC PLUG                    200          200        4     8.27 9.30 0.048     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG                    200          200        4     8.27 9.30 0.048     In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000015-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000015-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000015-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "sapPo": "1038",
+        "sapNo": "4000035",
+        "description": "EMPTY PLASTIC CAP                     100          100        1     3.91 494 0.022     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP                     100          100        1     3.91 494 0.022     In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000035-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000035-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000035-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "sapPo": "1038",
+        "sapNo": "4000001",
+        "description": "PUFF-Brand A                              500          500       10 14.80 16.25 0.014     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF-Brand A                              500          500       10 14.80 16.25 0.014     In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000001-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000001-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000001-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "sapPo": "1038",
+        "sapNo": "4000039",
+        "description": "EMPTY PLASTIC CAP               2000      2000     10 10.03 11.05 0.099    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP               2000      2000     10 10.03 11.05 0.099    In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000039-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000039-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000039-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "sapPo": "1038",
+        "sapNo": "9900027",
+        "description": "EMPTY PLASTIC CAP WITH BRUSH      1500        1500       7     574 7.24 0.114 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WITH BRUSH      1500        1500       7     574 7.24 0.114 Noti",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": []
+      },
+      {
+        "id": 17,
+        "sapPo": "1038",
+        "sapNo": "9900041",
+        "description": "EMPTY PLASTIC CAP               2000      2000     10 11.21 12.17 0.138 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP               2000      2000     10 11.21 12.17 0.138 Noti",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": []
+      },
+      {
+        "id": 18,
+        "sapPo": "1038",
+        "sapNo": "9900019",
+        "description": "EMPTY PLASTIC DROPPER           300       300      6 14.54 15.55 0.027 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER           300       300      6 14.54 15.55 0.027 Noti",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": []
+      },
+      {
+        "id": 19,
+        "sapPo": "1051",
+        "sapNo": "4000004",
+        "description": "CUSTOM PACKAGING                     200          200        2 17.54 18.56 0.132     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "CUSTOM PACKAGING                     200          200        2 17.54 18.56 0.132     In",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000004-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000004-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "sapPo": "1051",
+        "sapNo": "4000056",
+        "description": "UNKNOWN COMPONENT                 500          500        5 12.15 13.81 0.032     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "UNKNOWN COMPONENT                 500          500        5 12.15 13.81 0.032     In",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000056-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000056-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000056-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "sapPo": "1051",
+        "sapNo": "4000033",
+        "description": "EMPTY PLASTIC APPLICATOR         1000      1000     10 14.20 15.10 0.088    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR         1000      1000     10 14.20 15.10 0.088    In",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000033-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000033-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000033-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "sapPo": "1051",
+        "sapNo": "9900008",
+        "description": "EMPTY PLASTIC CAP WITH BRUSH      100          100        1     8.95 10.12 0.045 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WITH BRUSH      100          100        1     8.95 10.12 0.045 Noti",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": []
+      },
+      {
+        "id": 23,
+        "sapPo": "1064",
+        "sapNo": "4000012",
+        "description": "EMPTY PLASTIC DROPPER           1500      1500     15 21.30 22.80 0.110    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER           1500      1500     15 21.30 22.80 0.110    In",
+        "bom": "Brand D",
+        "brand": "Brand D",
+        "productionModels": [
+          {
+            "id": "4000012-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000012-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "sapPo": "1064",
+        "sapNo": "4000028",
+        "description": "EMPTY PLASTIC DISC                    200          200        2     6.45 7.80 0.035     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC                    200          200        2     6.45 7.80 0.035     In",
+        "bom": "Brand D",
+        "brand": "Brand D",
+        "productionModels": [
+          {
+            "id": "4000028-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000028-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000028-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "sapPo": "1064",
+        "sapNo": "9900012",
+        "description": "EMPTY PLASTIC BOTTLE            1000      1000     10 18.90 20.15 0.095 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE            1000      1000     10 18.90 20.15 0.095 Noti",
+        "bom": "Brand D",
+        "brand": "Brand D",
+        "productionModels": []
+      },
+      {
+        "id": 26,
+        "sapPo": "1072",
+        "sapNo": "4000041",
+        "description": "EMPTY PLASTIC PLUG               500       500      5 11.20 12.40 0.064    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG               500       500      5 11.20 12.40 0.064    In",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": [
+          {
+            "id": "4000041-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000041-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000041-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "sapPo": "1072",
+        "sapNo": "4000009",
+        "description": "EMPTY PLASTIC BOTTLE                 100          100        1     4.10 5.05 0.028     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE                 100          100        1     4.10 5.05 0.028     In",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": []
+      },
+      {
+        "id": 28,
+        "sapPo": "1072",
+        "sapNo": "9900045",
+        "description": "SPECIAL COATING CAP              2000      2000     20 25.60 27.10 0.150 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "SPECIAL COATING CAP              2000      2000     20 25.60 27.10 0.150 Noti",
+        "bom": "Brand A",
+        "brand": "Brand A",
+        "productionModels": []
+      },
+      {
+        "id": 29,
+        "sapPo": "1080",
+        "sapNo": "4000018",
+        "description": "EMPTY PLASTIC BOTTLE             500       500      5 12.40 13.80 0.075    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE             500       500      5 12.40 13.80 0.075    In",
+        "bom": "Brand G",
+        "brand": "Brand G",
+        "productionModels": [
+          {
+            "id": "4000018-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000018-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000018-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "sapPo": "1080",
+        "sapNo": "4000022",
+        "description": "EMPTY PLASTIC WIPER              1000      1000     10 15.80 17.10 0.082    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER              1000      1000     10 15.80 17.10 0.082    In",
+        "bom": "Brand G",
+        "brand": "Brand G",
+        "productionModels": [
+          {
+            "id": "4000022-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000022-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000022-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "sapPo": "1080",
+        "sapNo": "9900002",
+        "description": "ICT OPTIONAL PART              300      300     3 890 9.95 0.041 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "ICT OPTIONAL PART              300      300     3 890 9.95 0.041 Noti",
+        "bom": "Brand G",
+        "brand": "Brand G",
+        "productionModels": []
+      },
+      {
+        "id": 32,
+        "sapPo": "1088",
+        "sapNo": "4000005",
+        "description": "EMPTY PLASTIC CAP W/BRUSH         2000         2000       20 22.10 23.80 0.125     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP W/BRUSH         2000         2000       20 22.10 23.80 0.125     In",
+        "bom": "",
+        "brand": "",
+        "productionModels": []
+      },
+      {
+        "id": 33,
+        "sapPo": "1088",
+        "sapNo": "4000014",
+        "description": "EMPTY PLASTIC PLUG                  100         100       1     3.50 4.20 0.018     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG                  100         100       1     3.50 4.20 0.018     In",
+        "bom": "",
+        "brand": "",
+        "productionModels": [
+          {
+            "id": "4000014-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000014-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000014-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "sapPo": "1088",
+        "sapNo": "9900018",
+        "description": "EMPTY PLASTIC DISC TYPE B            1500         1500       15 19.40 20.80 0.105 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC TYPE B            1500         1500       15 19.40 20.80 0.105 Noti",
+        "bom": "",
+        "brand": "",
+        "productionModels": []
+      },
+      {
+        "id": 35,
+        "sapPo": "1095",
+        "sapNo": "4000027",
+        "description": "PUFF-Brand F                            200         200       2 720 810 0.038 In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF-Brand F                            200         200       2 720 810 0.038 In",
+        "bom": "Brand N",
+        "brand": "Brand N",
+        "productionModels": [
+          {
+            "id": "4000027-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000027-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000027-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "sapPo": "1095",
+        "sapNo": "4000031",
+        "description": "EMPTY PLASTIC APPLICATOR         1000      1000     10 16.50 17.90 0.089    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC APPLICATOR         1000      1000     10 16.50 17.90 0.089    In",
+        "bom": "Brand N",
+        "brand": "Brand N",
+        "productionModels": [
+          {
+            "id": "4000031-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000031-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000031-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "sapPo": "1095",
+        "sapNo": "4000008",
+        "description": "EMPTY PLASTIC DROPPER          500       500      5 10.30 11.40 0.052    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER          500       500      5 10.30 11.40 0.052    In",
+        "bom": "Brand N",
+        "brand": "Brand N",
+        "productionModels": []
+      },
+      {
+        "id": 38,
+        "sapPo": "1102",
+        "sapNo": "9900050",
+        "description": "UNREGISTERED BOTTLE                100         100       1     4.80 5.60 0.024 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "UNREGISTERED BOTTLE                100         100       1     4.80 5.60 0.024 Noti",
+        "bom": "Brand H",
+        "brand": "Brand H",
+        "productionModels": []
+      },
+      {
+        "id": 39,
+        "sapPo": "1102",
+        "sapNo": "4000019",
+        "description": "EMPTY PLASTIC CAP               2000      2000     20 24.30 25.90 0.138    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP               2000      2000     20 24.30 25.90 0.138    In",
+        "bom": "Brand H",
+        "brand": "Brand H",
+        "productionModels": [
+          {
+            "id": "4000019-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000019-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000019-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "sapPo": "1102",
+        "sapNo": "4000023",
+        "description": "EMPTY PLASTIC WIPER              1000      1000     10 13.90 15.20 0.076    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER              1000      1000     10 13.90 15.20 0.076    In",
+        "bom": "Brand H",
+        "brand": "Brand H",
+        "productionModels": [
+          {
+            "id": "4000023-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000023-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000023-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "sapPo": "1110",
+        "sapNo": "4000049",
+        "description": "EMPTY PLASTIC BOTTLE             300       300      3    9.10 10.20 0.048    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE             300       300      3    9.10 10.20 0.048    In",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000049-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000049-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000049-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "sapPo": "1110",
+        "sapNo": "9900022",
+        "description": "FOAM APPLICATOR                     1500        1500      15 17.80 19.10 0.098 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "FOAM APPLICATOR                     1500        1500      15 17.80 19.10 0.098 Noti",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": []
+      },
+      {
+        "id": 43,
+        "sapPo": "1110",
+        "sapNo": "4000011",
+        "description": "ICT COMMON                            500         500       5 11.60 12.70 0.062     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "ICT COMMON                            500         500       5 11.60 12.70 0.062     In",
+        "bom": "Brand B",
+        "brand": "Brand B",
+        "productionModels": [
+          {
+            "id": "4000011-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000011-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000011-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "sapPo": "1118",
+        "sapNo": "4000037",
+        "description": "EMPTY PLASTIC DISC                   100         100       1     3.80 4.50 0.020     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC                   100         100       1     3.80 4.50 0.020     In",
+        "bom": "Brand S",
+        "brand": "Brand S",
+        "productionModels": [
+          {
+            "id": "4000037-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000037-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000037-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "sapPo": "1118",
+        "sapNo": "9900031",
+        "description": "GLASS DROPPER ASSEMBLY           1000        1000      10 21.40 22.90 0.112 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "GLASS DROPPER ASSEMBLY           1000        1000      10 21.40 22.90 0.112 Noti",
+        "bom": "Brand S",
+        "brand": "Brand S",
+        "productionModels": []
+      },
+      {
+        "id": 46,
+        "sapPo": "1118",
+        "sapNo": "4000006",
+        "description": "EMPTY PLASTIC PLUG              2000      2000     20 26.10 27.80 0.145    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC PLUG              2000      2000     20 26.10 27.80 0.145    In",
+        "bom": "Brand S",
+        "brand": "Brand S",
+        "productionModels": []
+      },
+      {
+        "id": 47,
+        "sapPo": "1125",
+        "sapNo": "4000053",
+        "description": "PUFF-Brand H                           200         200       2    6.80 7.70 0.034     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "PUFF-Brand H                           200         200       2    6.80 7.70 0.034     In",
+        "bom": "Brand C",
+        "brand": "Brand C",
+        "productionModels": [
+          {
+            "id": "4000053-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000053-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000053-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "sapPo": "1125",
+        "sapNo": "4000017",
+        "description": "EMPTY PLASTIC CAP WITH BRUSH      1000        1000       10 14.90 16.30 0.081     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP WITH BRUSH      1000        1000       10 14.90 16.30 0.081     In",
+        "bom": "Brand C",
+        "brand": "Brand C",
+        "productionModels": [
+          {
+            "id": "4000017-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000017-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000017-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "sapPo": "1125",
+        "sapNo": "9900005",
+        "description": "TEST COMPONENT X                500       500      5 10.80 11.90 0.059 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "TEST COMPONENT X                500       500      5 10.80 11.90 0.059 Noti",
+        "bom": "Brand C",
+        "brand": "Brand C",
+        "productionModels": []
+      },
+      {
+        "id": 50,
+        "sapPo": "1132",
+        "sapNo": "4000045",
+        "description": "EMPTY PLASTIC BOTTLE                100         100       1     4.20 5.00 0.022     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC BOTTLE                100         100       1     4.20 5.00 0.022     In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000045-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000045-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000045-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "sapPo": "1132",
+        "sapNo": "4000029",
+        "description": "EMPTY PLASTIC WIPER              1500      1500     15 20.50 22.00 0.118    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC WIPER              1500      1500     15 20.50 22.00 0.118    In",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": [
+          {
+            "id": "4000029-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000029-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000029-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "sapPo": "1132",
+        "sapNo": "9900014",
+        "description": "NON-STANDARD PLUG                  300         300       3)    8.40 9.45 0.043 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "NON-STANDARD PLUG                  300         300       3)    8.40 9.45 0.043 Noti",
+        "bom": "Brand W",
+        "brand": "Brand W",
+        "productionModels": []
+      },
+      {
+        "id": 53,
+        "sapPo": "1140",
+        "sapNo": "4000016",
+        "description": "EMPTY PLASTIC CAP                1000      1000     10 13.60 14.90 0.072    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CAP                1000      1000     10 13.60 14.90 0.072    In",
+        "bom": "Brand F",
+        "brand": "Brand F",
+        "productionModels": [
+          {
+            "id": "4000016-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000016-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          },
+          {
+            "id": "4000016-1-DIR",
+            "desc": "DIRECT"
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "sapPo": "1140",
+        "sapNo": "4000003",
+        "description": "EMPTY PLASTIC DROPPER          2000      2000     20 25.80 27.40 0.141    In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DROPPER          2000      2000     20 25.80 27.40 0.141    In",
+        "bom": "Brand F",
+        "brand": "Brand F",
+        "productionModels": [
+          {
+            "id": "4000003-1-INS",
+            "desc": "Inspection_Assembly"
+          },
+          {
+            "id": "4000003-1-CTN",
+            "desc": "STK+CTN_CHANGE CODE"
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "sapPo": "1140",
+        "sapNo": "9900048",
+        "description": "EMPTY PLASTIC CONTAINER         500       500      5 12.10 13.30 0.066 Noti",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC CONTAINER         500       500      5 12.10 13.30 0.066 Noti",
+        "bom": "Brand F",
+        "brand": "Brand F",
+        "productionModels": []
+      },
+      {
+        "id": 56,
+        "sapPo": "1148",
+        "sapNo": "4000020",
+        "description": "EMPTY PLASTIC DISC                   200         200       2    6.90 7.80 0.036     In",
+        "totalQty": "",
+        "qtyPcs": "",
+        "qtyCtns": "",
+        "nw": "",
+        "gw": "",
+        "meas": "-",
+        "status": "COMPLETE",
+        "editedByUser": false,
+        "rawDescription": "EMPTY PLASTIC DISC                   200         200       2    6.90 7.80 0.036     In",
+        "bom": "",
+        "brand": "",
+        "productionModels": []
       }
     ]
   }

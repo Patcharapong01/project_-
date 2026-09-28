@@ -97,33 +97,123 @@ async function renderPageWithCoordinates(pageData) {
         str: item.str,
         x: item.transform[4],
         y: item.transform[5]
-    })));
+    }))) + '\n---PAGE_BREAK---\n';
 }
 
 function parsePackingListCoordinates(pageText) {
-    const pages = pageText.split(/\n\s*\n/).map(page => {
-        try {
-            return JSON.parse(page);
-        } catch (error) {
-            return [];
-        }
-    });
-    const items = [];
+    const rawPages = pageText.split('---PAGE_BREAK---').map(p => p.trim()).filter(Boolean);
+    const allItems = [];
 
-    pages.forEach(pageItems => {
+    rawPages.forEach((rawPage) => {
+        let pageItems = [];
+        try {
+            pageItems = JSON.parse(rawPage);
+        } catch (error) {
+            return;
+        }
+        if (!Array.isArray(pageItems) || !pageItems.length) return;
+
+        // Group into visual rows (Y threshold 3.5 points)
         const rows = [];
-        pageItems.forEach(textItem => {
-            if (!textItem.str || !textItem.str.trim()) return;
-            let row = rows.find(candidate => Math.abs(candidate.y - textItem.y) < 0.8);
+        pageItems.forEach(item => {
+            if (!item.str || !item.str.trim()) return;
+            const text = item.str.trim();
+            let row = rows.find(r => Math.abs(r.y - item.y) <= 3.5);
             if (!row) {
-                row = { y: textItem.y, cells: [] };
+                row = { y: item.y, cells: [] };
                 rows.push(row);
             }
-            row.cells.push(textItem);
+            row.cells.push({ str: text, x: item.x, y: item.y });
         });
 
-        rows.sort((left, right) => right.y - left.y).forEach(row => {
-            const columns = {
+        // Sort rows top-to-bottom (higher PDF Y = higher on page)
+        rows.sort((a, b) => b.y - a.y);
+
+        // Find primary table header row
+        const primaryHeaderKeywords = ['SAP PO', 'SAP NO', 'ITEM NO', 'DESCRIPTION', 'TOTAL QTY', 'QTY (PCS)', 'QTY (CTNS)', 'MEAS', 'PL NO', 'PI NO'];
+        let primaryHeaderIdx = -1;
+
+        for (let i = 0; i < Math.min(rows.length, 25); i++) {
+            const rowUpper = rows[i].cells.map(c => c.str.toUpperCase()).join(' ');
+            const matchCount = primaryHeaderKeywords.filter(kw => rowUpper.includes(kw)).length;
+            if (matchCount >= 2 || (rowUpper.includes('SAP') && rowUpper.includes('DESCRIPTION'))) {
+                primaryHeaderIdx = i;
+                break;
+            }
+        }
+
+        // Aggregate contiguous sub-header rows (e.g. 1-2 rows before or after primary header row)
+        const headerCandidateRows = [];
+        let endHeaderIdx = primaryHeaderIdx;
+
+        if (primaryHeaderIdx >= 0) {
+            // Check row before (e.g. "TOTAL QTY" on line above)
+            if (primaryHeaderIdx > 0) {
+                const prevRowText = rows[primaryHeaderIdx - 1].cells.map(c => c.str.toUpperCase()).join(' ');
+                if (/TOTAL|QTY|ITEM|SAP|N\.W|G\.W|MEAS/i.test(prevRowText) && !/\b\d{6,8}\b/.test(prevRowText)) {
+                    headerCandidateRows.push(rows[primaryHeaderIdx - 1]);
+                }
+            }
+
+            headerCandidateRows.push(rows[primaryHeaderIdx]);
+
+            // Check row(s) after (e.g. "(PCS)", "(CTNS)")
+            for (let j = primaryHeaderIdx + 1; j < Math.min(rows.length, primaryHeaderIdx + 3); j++) {
+                const nextRowText = rows[j].cells.map(c => c.str.toUpperCase()).join(' ');
+                if (/\((?:PCS|CTNS?|KGS?)\)|(?:PCS|CTNS|MEAS)/i.test(nextRowText) && !/\b\d{6,8}\b/.test(nextRowText)) {
+                    headerCandidateRows.push(rows[j]);
+                    endHeaderIdx = j;
+                } else {
+                    break;
+                }
+            }
+        }
+
+        // Build columns from aggregated header cells
+        const allHeaderCells = headerCandidateRows.flatMap(r => r.cells);
+        const cols = [];
+
+        allHeaderCells.forEach(cell => {
+            const u = cell.str.toUpperCase().trim();
+            let name = null;
+            if (u.includes('ITEM NO') || u === 'ITEM') name = 'itemNo';
+            else if (u.includes('P/I') || u.includes('PL NO') || u.includes('PI NO') || u === 'PL') name = 'piNo';
+            else if (u.includes('SAP PO') || u.includes('PO NO') || u === 'SAP P') name = 'sapPo';
+            else if (u.includes('SAP NO') || u.includes('MATERIAL') || u.includes('SAP N') || u.includes('ITEM CODE')) name = 'sapNo';
+            else if (u.includes('DESC') || u.includes('GOODS') || u.includes('SPEC')) name = 'description';
+            else if (u.includes('TOTAL QTY') || u.includes('TOTAL')) name = 'totalQty';
+            else if (u.includes('QTY (PCS)') || (u.includes('QTY') && cell.x > 400 && cell.x < 440) || u === '(PCS)') name = 'qtyPcs';
+            else if (u.includes('QTY (CTNS)') || (u.includes('QTY') && cell.x >= 440 && cell.x < 475) || u === '(CTNS)') name = 'qtyCtns';
+            else if (u.includes('N.W') || u === 'NW') name = 'nw';
+            else if (u.includes('G.W') || u === 'GW') name = 'gw';
+            else if (u.includes('MEAS') || u.includes('CBM')) name = 'meas';
+
+            if (name) {
+                const existing = cols.find(c => c.name === name);
+                if (!existing) {
+                    cols.push({ name, x: cell.x });
+                }
+            }
+        });
+        cols.sort((a, b) => a.x - b.x);
+
+        const startRow = endHeaderIdx >= 0 ? endHeaderIdx + 1 : 0;
+        let lastItem = null;
+
+        for (let i = startRow; i < rows.length; i++) {
+            const row = rows[i];
+            row.cells.sort((a, b) => a.x - b.x);
+            const rowFullText = row.cells.map(c => c.str).join(' ');
+
+            // Ignore header echoes, shipping marks, footers, total summary
+            if (/TOTAL SHIPPED|SHIPPING MARK|COUNTRY OF ORIGIN|PAGE|SIGNATURE|AUTHORIZED/i.test(rowFullText)) {
+                continue;
+            }
+            if (/^Total\b/i.test(rowFullText) && !/\b\d{6,8}\b/.test(rowFullText)) {
+                continue;
+            }
+
+            const colValues = {
                 itemNo: [],
                 piNo: [],
                 sapPo: [],
@@ -137,50 +227,103 @@ function parsePackingListCoordinates(pageText) {
                 meas: []
             };
 
-            row.cells.forEach(cell => {
-                const column = cell.x < 90 ? 'itemNo'
-                    : cell.x < 170 ? 'piNo'
-                    : cell.x < 205 ? 'sapPo'
-                    : cell.x < 235 ? 'sapNo'
-                    : cell.x < 380 ? 'description'
-                    : cell.x < 415 ? 'totalQty'
-                    : cell.x < 445 ? 'qtyPcs'
-                    : cell.x < 475 ? 'qtyCtns'
-                    : cell.x < 510 ? 'nw'
-                    : cell.x < 545 ? 'gw'
-                    : 'meas';
-                columns[column].push(cell);
-            });
+            if (cols.length >= 3) {
+                row.cells.forEach(cell => {
+                    let assignedCol = cols[0].name;
+                    for (let c = 0; c < cols.length; c++) {
+                        const left = c === 0 ? 0 : (cols[c - 1].x + cols[c].x) / 2;
+                        const right = c === cols.length - 1 ? 99999 : (cols[c].x + cols[c + 1].x) / 2;
+                        if (cell.x >= left && cell.x < right) {
+                            assignedCol = cols[c].name;
+                            break;
+                        }
+                    }
+                    colValues[assignedCol].push(cell.str);
+                });
+            } else {
+                // Fallback token classification
+                row.cells.forEach(cell => {
+                    if (/^\d{6,8}$/.test(cell.str)) colValues.sapNo.push(cell.str);
+                    else if (/^\d{4,5}$/.test(cell.str)) colValues.sapPo.push(cell.str);
+                    else if (/[A-Za-z]/.test(cell.str)) colValues.description.push(cell.str);
+                    else if (/^[\d,]+(\.\d+)?$/.test(cell.str)) colValues.totalQty.push(cell.str);
+                });
+            }
 
-            const joinColumn = column => columns[column].sort((left, right) => left.x - right.x).map(cell => cell.str).join(' ').trim();
-            const sapNo = joinColumn('sapNo').match(/42\d{5,6}/);
-            const description = joinColumn('description');
-            const totalQty = joinColumn('totalQty');
+            // Reassign text cells that were placed in sapNo or piNo but contain descriptive text
+            const descKeywords = /[A-Za-z]{3,}/;
+            if (colValues.sapNo.length > 1) {
+                const pureDigits = [];
+                colValues.sapNo.forEach(str => {
+                    if (/^\d{5,10}$/.test(str)) pureDigits.push(str);
+                    else if (descKeywords.test(str)) colValues.description.unshift(str);
+                    else pureDigits.push(str);
+                });
+                colValues.sapNo = pureDigits;
+            }
 
-            if (!sapNo || !description) return;
+            let sapNoStr = colValues.sapNo.join('').replace(/\s+/g, '');
+            let sapPoStr = colValues.sapPo.join('').replace(/\s+/g, '');
+            let descStr = colValues.description.join(' ').trim();
+            let totalQtyStr = colValues.totalQty.join('').replace(/,/g, '').trim();
+            let qtyPcsStr = colValues.qtyPcs.join('').replace(/,/g, '').trim();
+            let qtyCtnsStr = colValues.qtyCtns.join('').replace(/,/g, '').trim();
+            let nwStr = colValues.nw.join('').replace(/,/g, '').trim();
+            let gwStr = colValues.gw.join('').replace(/,/g, '').trim();
+            let measStr = colValues.meas.join('').replace(/,/g, '').trim() || '-';
 
-            const item = {
-                id: items.length + 1,
-                sapPo: joinColumn('sapPo').replace(/\s+/g, ''),
-                sapNo: sapNo[0],
-                description,
-                totalQty: totalQty.replace(/\s+/g, '').replace(/,/g, ''),
-                qtyPcs: joinColumn('qtyPcs').replace(/\s+/g, '').replace(/,/g, ''),
-                qtyCtns: joinColumn('qtyCtns').replace(/\s+/g, '').replace(/,/g, ''),
-                nw: joinColumn('nw').replace(/\s+/g, '').replace(/,/g, ''),
-                gw: joinColumn('gw').replace(/\s+/g, '').replace(/,/g, ''),
-                meas: joinColumn('meas').replace(/\s+/g, '').replace(/,/g, ''),
-                status: totalQty ? 'COMPLETE' : 'INCOMPLETE',
-                editedByUser: false
-            };
-            items.push(item);
-        });
+            // Clean dummy 'x' from descriptions
+            if (/^x+$/i.test(descStr)) descStr = '';
+
+            // Check if SAP NO is inside another column or row text
+            if (!sapNoStr || !/^\d{6,8}$/.test(sapNoStr)) {
+                const sapMatch = sapNoStr.match(/\b\d{6,8}\b/) || rowFullText.match(/\b\d{6,8}\b/);
+                if (sapMatch) sapNoStr = sapMatch[0];
+            }
+
+            if (!sapPoStr || !/^\d{4,6}$/.test(sapPoStr)) {
+                const poMatch = sapPoStr.match(/\b\d{4,5}\b/) || rowFullText.match(/\b\d{4,5}\b/);
+                if (poMatch && poMatch[0] !== sapNoStr) sapPoStr = poMatch[0];
+            }
+
+            // If this is a valid data row with SAP NO or Description
+            if (sapNoStr && (descStr || rowFullText.length > 5)) {
+                if (!descStr) {
+                    descStr = row.cells.filter(c => /[A-Za-z]/.test(c.str) && !c.str.startsWith('SC-')).map(c => c.str).join(' ').trim();
+                }
+
+                const item = {
+                    id: allItems.length + 1,
+                    sapPo: sapPoStr,
+                    sapNo: sapNoStr,
+                    description: descStr || '-',
+                    totalQty: totalQtyStr,
+                    qtyPcs: qtyPcsStr,
+                    qtyCtns: qtyCtnsStr,
+                    nw: nwStr,
+                    gw: gwStr,
+                    meas: measStr,
+                    status: (sapPoStr && sapNoStr && descStr) ? 'COMPLETE' : 'INCOMPLETE',
+                    editedByUser: false
+                };
+                allItems.push(item);
+                lastItem = item;
+            } else if (lastItem && descStr) {
+                // Multi-line continuation of description
+                if (!lastItem.description.includes(descStr)) {
+                    lastItem.description += ' ' + descStr;
+                }
+                if (!lastItem.totalQty && totalQtyStr) lastItem.totalQty = totalQtyStr;
+                if (!lastItem.nw && nwStr) lastItem.nw = nwStr;
+                if (!lastItem.gw && gwStr) lastItem.gw = gwStr;
+            }
+        }
     });
 
-    return items;
+    return allItems;
 }
 
-// Advanced Parsing Engine for Packing Lists
+// Advanced Parsing Engine for Packing Lists (Text-based)
 function parsePackingListText(text) {
     const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     const items = [];
@@ -200,7 +343,7 @@ function parsePackingListText(text) {
         const isHeader = ignoreKeywords.some(kw => upper === kw || upper.startsWith(`${kw} `));
         if (isHeader) return;
 
-        const sapNoMatches = [...line.matchAll(/42\d{5,6}/g)];
+        const sapNoMatches = [...line.matchAll(/\b(?:4\d{6,7}|\d{6,10})\b/g)];
         const sapNoMatch = sapNoMatches.length ? sapNoMatches[sapNoMatches.length - 1] : null;
         const numericOnlyTokens = /^[\d,\.\s]+$/.test(line);
 
@@ -242,7 +385,7 @@ function parsePackingListText(text) {
             return;
         }
 
-        const poMatches = prefix.match(/\d{4}/g) || [];
+        const poMatches = prefix.match(/\b\d{4,6}\b/g) || [];
         const sapPo = poMatches.length ? poMatches[poMatches.length - 1] : '';
         const { description, values } = splitDescriptionAndValues(suffix);
         if (!description) {
@@ -390,7 +533,7 @@ function parsePackingListText(text) {
     function addPackingItem({ sapPo, sapNo, description, valueText, valueValues }) {
         if (!sapNo || !description) return;
 
-        const values = valueText ? valueText.split(/\s+/) : valueValues;
+        const values = valueText ? valueText.split(/\s+/) : (valueValues || []);
         const normalizedValues = values.map(value => value.replace(/,/g, ''));
         const item = {
             id: items.length + 1,
@@ -418,7 +561,7 @@ function parsePackingListText(text) {
         item.nw = values[3] || item.nw;
         item.gw = values[4] || item.gw;
         item.meas = values[5] || item.meas;
-        item.status = (item.sapPo && item.sapNo && item.description && item.totalQty) ? 'COMPLETE' : 'INCOMPLETE';
+        item.status = (item.sapPo && item.sapNo && item.description) ? 'COMPLETE' : 'INCOMPLETE';
     }
 
     return items;
@@ -489,15 +632,41 @@ app.post('/api/upload', (req, res) => {
 
             if (rawText.length > 20) {
                 extractedItems = parsePackingListCoordinates(rawText);
+                
+                // Fallback 1: Plain digital text parsing
                 if (extractedItems.length === 0) {
+                    try {
+                        const standardPdf = await pdfParse(dataBuffer);
+                        if (standardPdf.text && standardPdf.text.trim().length > 20) {
+                            extractedItems = parsePackingListText(standardPdf.text);
+                            if (extractedItems.length > 0) {
+                                processType = 'TEXT_LAYER';
+                            }
+                        }
+                    } catch (textErr) {
+                        console.warn('Standard text extraction fallback failed:', textErr);
+                    }
+                }
+
+                // Fallback 2: OCR engine
+                if (extractedItems.length === 0) {
+                    try {
+                        const ocrResult = await processOCR(filePath);
+                        extractedItems = parsePackingListText(ocrResult.extractedText);
+                        processType = 'OCR';
+                    } catch (ocrErr) {
+                        console.warn('OCR process failed:', ocrErr);
+                    }
+                }
+            } else {
+                // Scanned PDF with no digital text layer
+                try {
                     const ocrResult = await processOCR(filePath);
                     extractedItems = parsePackingListText(ocrResult.extractedText);
                     processType = 'OCR';
+                } catch (ocrErr) {
+                    console.warn('OCR process failed:', ocrErr);
                 }
-            } else {
-                const ocrResult = await processOCR(filePath);
-                extractedItems = parsePackingListText(ocrResult.extractedText);
-                processType = 'OCR';
             }
 
             const documentId = generateDocumentId();
@@ -628,3 +797,4 @@ app.listen(PORT, () => {
     console.log(`URL: http://localhost:3000`);
     console.log(`================================================`);
 });
+
