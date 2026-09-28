@@ -57,12 +57,15 @@ async function loadBomData() {
                 const rawProductId = values[productIdIndex];
                 const brand = values[bomDescriptionIndex];
 
-                if (rawProductId && brand) {
+                if (rawProductId) {
                     const cleanedId = cleanProductId(rawProductId);
-                    bomLookupMap[cleanedId] = brand;
+                    bomLookupMap[cleanedId] = {
+                        hasBom: true,
+                        brand: (brand || '').trim()
+                    };
                 }
             }
-            console.log('BOM data loaded successfully:', bomLookupMap);
+            console.log('BOM data loaded successfully:', Object.keys(bomLookupMap).length, 'items');
             return;
         } catch (error) {
             console.warn(`Error loading BOM data from ${url}:`, error);
@@ -136,18 +139,20 @@ function enrichItemDescription(item) {
     item.rawDescription = baseDesc;
     item.description = baseDesc;
     const cleanedSapNo = cleanProductId(item.sapNo);
-    const rawBom = bomLookupMap[cleanedSapNo];
-    const models = productionModelLookupMap[cleanedSapNo] || [];
+    const bomEntry = bomLookupMap[cleanedSapNo];
 
-    if (rawBom && rawBom.trim()) {
-        item.bom = rawBom.trim();
-        item.brand = rawBom.trim();
+    if (bomEntry && bomEntry.hasBom) {
+        item.hasBom = true;
+        item.bom = bomEntry.brand || '';
+        item.brand = bomEntry.brand || '';
+        item.productionModels = productionModelLookupMap[cleanedSapNo] || [];
     } else {
+        // ไม่มี BOM -> จะไม่มี Brand และไม่มี Production Model
+        item.hasBom = false;
         item.bom = '';
         item.brand = '';
+        item.productionModels = [];
     }
-
-    item.productionModels = models;
 
     return item;
 }
@@ -159,25 +164,28 @@ function enrichAllItems(items) {
     // Step 1: Initial enrichment per item based on its SAP NO
     items.forEach(item => enrichItemDescription(item));
 
-    // Step 2: Build SAP PO to Brand mapping (look for any resolved Brand in the same SAP PO group)
+    // Step 2: Build SAP PO to Brand mapping (look for any resolved Brand in the same SAP PO group from items with BOM)
     const poBrandMap = {};
     items.forEach(item => {
         const po = String(item.sapPo || '').trim();
-        if (po && item.bom && item.bom.trim()) {
+        if (po && item.hasBom && item.brand && item.brand.trim()) {
             if (!poBrandMap[po]) {
-                poBrandMap[po] = item.bom.trim();
+                poBrandMap[po] = item.brand.trim();
             }
         }
     });
 
-    // Step 3: Synchronize Brand & BOM status for all items with matching SAP PO
+    // Step 3: Synchronize Brand ONLY for items that have BOM
     items.forEach(item => {
-        const po = String(item.sapPo || '').trim();
-        if (po && poBrandMap[po]) {
-            item.brand = poBrandMap[po];
-            item.bom = poBrandMap[po];
+        if (item.hasBom) {
+            const po = String(item.sapPo || '').trim();
+            if (po && poBrandMap[po]) {
+                item.brand = poBrandMap[po];
+            }
         } else {
-            item.brand = item.bom || '';
+            // ไม่มี BOM -> ไม่มี Brand และไม่มี Production Model
+            item.brand = '';
+            item.productionModels = [];
         }
     });
 
@@ -765,9 +773,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             // BOM Filter
             if (selectedBom === 'FOUND') {
-                if (!item.bom || !item.bom.trim()) return false;
+                if (!item.hasBom) return false;
             } else if (selectedBom === 'NOT_FOUND') {
-                if (item.bom && item.bom.trim()) return false;
+                if (item.hasBom) return false;
             }
 
             // Production Model Filter
@@ -829,13 +837,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             const tr = document.createElement('tr');
             tr.className = "hover:bg-blue-50/50 dark:hover:bg-slate-800/60 transition-colors border-b border-slate-100 dark:border-slate-800/80 group";
 
-            // BOM Column Badge: ถ้ามี BOM ให้แสดงป้ายสีเขียว "พบ" (พร้อมไอคอน check-circle) ถ้าไม่มีให้แสดงป้ายสีแดง "ไม่พบ" (พร้อมไอคอน x-circle)
-            const hasBom = Boolean(item.bom && item.bom.trim());
+            // BOM Column Badge: ถ้ามี BOM ให้แสดงป้ายสีเขียว "พบ" ถ้าไม่มี BOM ให้แสดงป้ายสีแดง "ไม่พบ"
+            const hasBom = Boolean(item.hasBom);
             const bomBadge = hasBom
                 ? `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-200/80 dark:border-emerald-800/80 shadow-2xs whitespace-nowrap"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> พบ</span>`
                 : `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold bg-red-50 dark:bg-red-950/60 text-red-600 dark:text-red-400 border border-red-200/80 dark:border-red-900/60 shadow-2xs whitespace-nowrap"><i data-lucide="x-circle" class="w-3.5 h-3.5"></i> ไม่พบ</span>`;
 
-            // BRAND Column Badge (Synced across same SAP PO)
+            // BRAND Column Badge
             const hasBrand = Boolean(item.brand && item.brand.trim());
             const brandBadge = hasBrand
                 ? `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold bg-gradient-to-r from-blue-500/10 to-indigo-500/10 dark:from-blue-900/50 dark:to-indigo-900/50 text-blue-700 dark:text-cyan-300 border border-blue-200/80 dark:border-blue-800/80 shadow-2xs whitespace-nowrap"><i data-lucide="tag" class="w-3 h-3 text-blue-500 dark:text-cyan-400"></i> ${escapeHtml(item.brand)}</span>`

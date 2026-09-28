@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const result = await response.json();
         if (!response.ok || !result.success) throw new Error('ไม่สามารถ Export ข้อมูลได้');
 
-        const rows = [['Document ID', 'File Name', 'SAP PO', 'SAP NO.', 'DESCRIPTION', 'BRAND', 'PRODUCTION MODELS', 'TOTAL QTY', 'QTY PCS', 'QTY CTNS', 'N.W.', 'G.W.', 'MEAS.']];
+        const rows = [['Document ID', 'File Name', 'SAP PO', 'SAP NO.', 'DESCRIPTION', 'BOM', 'BRAND', 'PRODUCTION MODELS', 'TOTAL QTY', 'QTY PCS', 'QTY CTNS', 'N.W.', 'G.W.', 'MEAS.']];
         result.documents.forEach(document => {
             document.items.forEach(item => {
                 const prodModels = Array.isArray(item.productionModels)
@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.sapPo,
                     item.sapNo,
                     item.description,
+                    item.hasBom ? 'พบ' : 'ไม่พบ',
                     item.brand || '',
                     prodModels,
                     item.totalQty,
